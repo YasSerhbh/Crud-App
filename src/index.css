@@ -5,9 +5,131 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background: #16a085;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+    background: #1abc9c;
+    margin: auto;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.coursetype {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #16a085;
+    width: 77%;
+    margin-right: 3%;
+    /* padding: 12px; */
+    height: 35px;
+    font-size: 20px;
+}
+.courseadd {
+    height: 35px;
+    min-width: fit-content;
+    width: 19%;
+    background: #16a085;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.App > form {
+    width: 80%;
+}
+
+.element {
+    width: 100%;
+    margin-top: 5px;
+    background: #16a085;
+    margin-bottom: 5px;
+}
+.element span {
+    width: 60%;
+    display: inline-block;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.list {
+    width: 80%;
+    margin-top: 20px;
+}
+.element button {
+    width: 19%;
+    /* height: 100%; */
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    border: none;
+    margin: 1px;
+    border-radius: 5px;   
+    cursor: pointer; 
+    min-width: fit-content;
+
+}
+.element .edit {
+    background: #34495e;
+}
+.element .delete {
+    background: #c0392b;
+}
+
+.element-edit {
+    width: 100%;
+    margin-top: 5px;
+    background: #16a085;
+    height: 44px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    color: #fff;
+}
+.list p {
+    text-align: center;
+    background: #16a085;
+    color: #fff;
+    padding: 25px;
+    font-size: 23px;
+    border-radius: 4px;
+}
+.element-edit input:first-child {
+    width: 30vw;
+    height: 80%;
+    font-size: 19px;
+}
+.element-edit input:last-child {
+    width: 20%;
+    /* height: 100%; */
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    border: none;
+    margin-left: 2%;
+    border-radius: 5px;   
+    cursor: pointer; 
+    background: #34495e;
+    min-width: fit-content;
 }
